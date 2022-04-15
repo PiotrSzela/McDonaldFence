@@ -28,7 +28,7 @@ int main()
                 {
 
                     SetConsoleTextAttribute(consoleColor, 12);
-                    cout << "it is not a number! Or to much fence! \nMax fence lenght is: " << INT_MAX << " meters \nTry again!" << endl;
+                    cout << "It is not a number! Or to much fence! \nMax fence lenght is: " << INT_MAX << " meters \nTry again!" << endl;
                     SetConsoleTextAttribute(consoleColor, 7);
                     break;
                 }
@@ -38,9 +38,18 @@ int main()
                     a = fenceLong / 3;
                     b = a;
                     cout << "a = " << a << " meters, b = " << b << " meters" << endl;
-                    squareMeter = a * b;
-                    cout << "The optimal area of your farm is : " << squareMeter << " square meters" << endl;
-
+                   
+                    
+                        squareMeter = a * b;
+                        if (squareMeter < 0)
+                        {
+                            cout << "The area of your farm is HUGE!" << endl;
+                            
+                        }
+                        else
+                        {
+                            cout << "The optimal area of your farm is: " << squareMeter << " square meters" << endl;
+                        }
                     while (true)
                     {
                         cout << "Try again? YES/NO ";
@@ -97,26 +106,4 @@ int main()
     return 0;
 
 }
-
-
-
-
-        
-
-
-            
-            
-
-
-
-
-
-
-
-
-
-
-            
-
-
 
