@@ -1,4 +1,4 @@
-# McDonaldFence
+# Uncle McDonald fence
 
 The program was created as a part of a recruitment task.
 
